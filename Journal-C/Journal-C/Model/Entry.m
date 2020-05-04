@@ -48,6 +48,13 @@ static NSString * const TimeStampKey = @"timestamp";
     return [self initWithTitle:title bodyText:bodyText timeStamp:timestamp];
 }
 
+- (BOOL)isEqual:(id)object
+{
+    if (![object isKindOfClass:[Entry class]]) { return NO; }
+    // Shortcut to comparing all properties one by one. We let NSDictionary do it for us
+    return [[self dictionaryCopy] isEqualToDictionary:[(Entry *)object dictionaryCopy]];
+}
+
 
 
 @end
