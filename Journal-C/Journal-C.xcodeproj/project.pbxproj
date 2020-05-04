@@ -13,6 +13,8 @@
 		29AEF2BE2460A3780070656C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29AEF2BD2460A3780070656C /* Assets.xcassets */; };
 		29AEF2C12460A3780070656C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AEF2BF2460A3780070656C /* LaunchScreen.storyboard */; };
 		29AEF2C42460A3780070656C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEF2C32460A3780070656C /* main.m */; };
+		29AEF2D22460A45F0070656C /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEF2D12460A45F0070656C /* Entry.m */; };
+		29AEF2D52460A66E0070656C /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEF2D42460A66E0070656C /* EntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		29AEF2C02460A3780070656C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29AEF2C22460A3780070656C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29AEF2C32460A3780070656C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29AEF2D02460A45F0070656C /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		29AEF2D12460A45F0070656C /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		29AEF2D32460A66E0070656C /* EntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		29AEF2D42460A66E0070656C /* EntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 		29AEF2CC2460A3B20070656C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				29AEF2D02460A45F0070656C /* Entry.h */,
+				29AEF2D12460A45F0070656C /* Entry.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +116,8 @@
 		29AEF2CE2460A3B70070656C /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				29AEF2D32460A66E0070656C /* EntryController.h */,
+				29AEF2D42460A66E0070656C /* EntryController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -189,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29AEF2D52460A66E0070656C /* EntryController.m in Sources */,
+				29AEF2D22460A45F0070656C /* Entry.m in Sources */,
 				29AEF2B32460A3770070656C /* AppDelegate.m in Sources */,
 				29AEF2C42460A3780070656C /* main.m in Sources */,
 				29AEF2B62460A3770070656C /* SceneDelegate.m in Sources */,
