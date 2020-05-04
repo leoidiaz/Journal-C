@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _entryTitleLabel.delegate = self;
     
     if (_entry){
         [self updateWith: _entry];
