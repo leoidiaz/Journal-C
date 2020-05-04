@@ -15,6 +15,8 @@
 		29AEF2C42460A3780070656C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEF2C32460A3780070656C /* main.m */; };
 		29AEF2D22460A45F0070656C /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEF2D12460A45F0070656C /* Entry.m */; };
 		29AEF2D52460A66E0070656C /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEF2D42460A66E0070656C /* EntryController.m */; };
+		29AEF2D82460AEAC0070656C /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEF2D72460AEAC0070656C /* EntryListTableViewController.m */; };
+		29AEF2DB2460B1E20070656C /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEF2DA2460B1E20070656C /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		29AEF2D12460A45F0070656C /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		29AEF2D32460A66E0070656C /* EntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
 		29AEF2D42460A66E0070656C /* EntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		29AEF2D62460AEAC0070656C /* EntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		29AEF2D72460AEAC0070656C /* EntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		29AEF2D92460B1E20070656C /* EntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		29AEF2DA2460B1E20070656C /* EntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,10 @@
 		29AEF2CF2460A3BB0070656C /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				29AEF2D62460AEAC0070656C /* EntryListTableViewController.h */,
+				29AEF2D72460AEAC0070656C /* EntryListTableViewController.m */,
+				29AEF2D92460B1E20070656C /* EntryDetailViewController.h */,
+				29AEF2DA2460B1E20070656C /* EntryDetailViewController.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -203,6 +213,8 @@
 				29AEF2D22460A45F0070656C /* Entry.m in Sources */,
 				29AEF2B32460A3770070656C /* AppDelegate.m in Sources */,
 				29AEF2C42460A3780070656C /* main.m in Sources */,
+				29AEF2D82460AEAC0070656C /* EntryListTableViewController.m in Sources */,
+				29AEF2DB2460B1E20070656C /* EntryDetailViewController.m in Sources */,
 				29AEF2B62460A3770070656C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

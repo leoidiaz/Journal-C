@@ -33,9 +33,19 @@
 }
 
 #pragma mark - Add Entry
-- (void)addEntry:(Entry *)entry
+- (void)addEntryWithTitle:(NSString *)title bodyText:(NSString *)bodyText
 {
-    [_entries addObject:entry];
+    Entry *newEntry = [[Entry alloc]
+                       initWithTitle:title bodyText:bodyText];
+    
+    [_entries addObject:newEntry];
+}
+
+#pragma mark - Update Entry
+- (void)updateEntry:(Entry *)entry title:(NSString *)title bodyText:(NSString *)bodyText
+{
+    entry.title = title;
+    entry.bodyText = bodyText;
 }
 
 #pragma mark - Remove Entry
@@ -43,4 +53,6 @@
 {
     [_entries removeObject:entry];
 }
+
+
 @end

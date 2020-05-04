@@ -14,7 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong)NSMutableArray *entries;
 
--(void)addEntry:(Entry *)entry;
++(EntryController *)shared;
+
+-(void)addEntryWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
+
+-(void)updateEntry:(Entry *)entry title:(NSString *)title bodyText:(NSString *)bodyText;
 
 -(void)removeEntry:(Entry *)entry;
 
