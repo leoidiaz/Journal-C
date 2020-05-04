@@ -34,7 +34,7 @@
 - (IBAction)saveButtonPressed:(UIBarButtonItem *)sender
 {
     if (_entry) {
-        [EntryController.shared updateEntry:_entry title:_entryTitleLabel.text bodyText:_entryBodyTextView.text];
+        [EntryController.shared updateEntry:_entry title:_entryTitleLabel.text bodyText:_entryBodyTextView.text timeStamp:[NSDate date]];
     } else {
         [EntryController.shared addEntryWithTitle:_entryTitleLabel.text bodyText:_entryBodyTextView.text];
     }

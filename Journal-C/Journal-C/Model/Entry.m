@@ -9,6 +9,10 @@
 #import "Entry.h"
 
 @implementation Entry
+#pragma mark - String Keys
+static NSString * const TitleKey = @"title";
+static NSString * const BodyTextKey = @"bodyText";
+static NSString * const TimeStampKey = @"timestamp";
 
 - (instancetype)initWithTitle:(NSString *)title
                      bodyText:(NSString *)bodyText
@@ -23,11 +27,27 @@
     return self;
 }
 
-
+#pragma mark - Default Init
 - (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText
 {
     self = [self initWithTitle:title bodyText:bodyText timeStamp:[NSDate date]];
     return self;
 }
+
+- (NSDictionary *)dictionaryCopy
+{
+    return @{TitleKey: _title, BodyTextKey: _bodyText, TimeStampKey: _timestamp};
+}
+
+#pragma mark - Dictionary Init
+- (instancetype)initWithDict:(NSDictionary *)dictionary
+{
+    NSString *title = dictionary[TitleKey];
+    NSString *bodyText = dictionary[BodyTextKey];
+    NSDate *timestamp = dictionary[TimeStampKey];
+    return [self initWithTitle:title bodyText:bodyText timeStamp:timestamp];
+}
+
+
 
 @end

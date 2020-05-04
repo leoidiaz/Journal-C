@@ -18,10 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)addEntryWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
 
--(void)updateEntry:(Entry *)entry title:(NSString *)title bodyText:(NSString *)bodyText;
+-(void)updateEntry:(Entry *)entry title:(NSString *)title bodyText:(NSString *)bodyText timeStamp:(NSDate *)timeStamp;
 
 -(void)removeEntry:(Entry *)entry;
+-(void)addDictObject:(Entry *)entry;
 
+-(void)saveToPersistentStorage;
+-(void)loadFromPersistentStorage;
 
 @end
 

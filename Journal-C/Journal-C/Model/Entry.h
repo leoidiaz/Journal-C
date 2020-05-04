@@ -21,7 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithTitle:(NSString *)title
                      bodyText:(NSString *)bodyText;
-
+- (instancetype)initWithDict:(NSDictionary *)dictionary;
+- (NSDictionary *)dictionaryCopy;
 
 @end
 
